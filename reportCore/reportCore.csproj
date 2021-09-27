@@ -5,9 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+    <Compile Remove="DTOs\**" />
+    <Compile Remove="Interfaces\**" />
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="DTOs\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="DTOs\**" />
+    <None Remove="Interfaces\**" />
+    <None Remove="Services\**" />
   </ItemGroup>
 
 </Project>
